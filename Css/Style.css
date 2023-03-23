@@ -1,0 +1,357 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+    --main-color: orangered; 
+}
+/* Start Landing-1 */
+.landing-1 {
+    background-image: url(../images/landing-8.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.landing-1 .overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.527);
+    height: 100%;
+    width: 100%;
+}
+.landing-1 .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    text-align: center;
+    padding: 160px 0 100px 0;
+    color: white;
+}
+.landing-1 .content img {
+    width: 130px;
+    height: 150px;
+    padding-bottom: 40px;
+}
+.landing-1 .content h1 {
+    padding-bottom: 30px;
+    font-size: 55px;
+}
+.landing-1 .content p {
+    padding: 0 380px;
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+.landing-1 .content button {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+/* End Landing-1 */
+
+/* Start media-query */
+@media(max-width: 414px) {
+    .landing-1 .content p {
+    padding: 0 20px;
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+}
+@media(max-width: 375px) {
+    .landing-1 .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    text-align: center;
+    padding: 100px 0 100px 0;
+    color: white;
+}
+.landing-1 .content img {
+    width: 100px;
+    height: 130px;
+    padding-bottom: 40px;
+}
+.landing-1 .content h1 {
+    padding-bottom: 30px;
+    font-size: 35px;
+}
+.landing-1 .content p {
+    padding: 0 20px;
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+}
+@media(width: 1024px) {
+.landing-1 .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    text-align: center;
+    padding: 50px 0 100px 0;
+    color: white;
+}
+}
+@media(width: 540px) {
+.landing-1 .content p {
+    padding: 0 100px;
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+}
+@media(width: 912px) {
+.landing-1 .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    text-align: center;
+    padding: 400px 0 100px 0;
+    color: white;
+}
+.landing-1 .content img {
+    width: 200px;
+    height: 200px;
+    padding-bottom: 40px;
+}
+.landing-1 .content h1 {
+    padding-bottom: 30px;
+    font-size: 50px;
+}
+.landing-1 .content p {
+    padding: 0 200px;
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+}
+@media(width: 820px) {
+    .landing-1 .content p {
+    padding: 0 100px;
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+}
+@media(width: 768px) {
+    .landing-1 .content p {
+    padding: 0 100px;
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+}
+/* End media-query */
+
+/* Start Landing-2 */
+.landing-2 {
+    background-image: url(../images/landing-9.jpg);
+    background-size: cover;
+}
+.landing-2 h1 {
+    padding-top: 80px;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-gap: 50px;
+    grid-template-rows: 200px, 200px, 200px;
+    width: 80%;
+    margin: auto;
+    padding: 50px 0 50px 0;
+}
+.cards .card {
+    background-color: white;
+    height: 350px;
+    position: relative;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.644);
+    cursor: pointer;
+}
+.cards .card img {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+}
+.cards .card h2 {
+    color: var(--main-color);
+    margin-top: 200px;
+    text-align: center;
+}
+.cards .card p {
+    padding: 15px 20px;
+    text-align: center;
+}
+/* End Landing-2 */
+
+/* Start Landing-3 */
+.landing-3 {
+    background-image: url(../images/landing-9.jpg);
+    background-size: cover;
+    position: relative;
+}
+.landing-3 h1 {
+    padding-top: 80px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+.landing-3 .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+}
+.landing-3 .cards .card {
+    height: 350px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.landing-3 .cards .card img {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+}
+.landing-3 .cards .card h2 {
+    margin-top: 150px;
+}
+.landing-3 .cards .card a {
+    padding: 10px 0;
+}
+/* End Landing-3 */
+
+/* Start Landing-4 */
+.landing-4 {
+    background-image: url(../images/landing-7.jpg);
+    background-size: cover;
+    padding: 30px 0 50px 0;
+}
+.landing-4 .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px,1fr));
+}
+.landing-4 .cards .card {
+    height: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px;
+}
+.landing-4 .cards .card img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 33%;
+    top: 15%;
+}
+.landing-4 .cards .card h2 {
+    color: black;
+    font-size: 20px;
+    margin-top: 130px;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+.landing-4 .form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top: 20px;
+    position: relative;
+    width: 50%;
+}
+.landing-4 .form label {
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.landing-4 .form input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 50%;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+}
+.landing-4 .form input:focus {
+    outline: none;
+}
+.landing-4 .form input[type=submit] {
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+    margin: 30px 0;
+    border: none;
+    height: 50px;
+    border-radius: 20px;
+}
+.social {
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.social h1 {
+    font-weight: 500;
+    font-size: 40px;
+    padding: 0 30px;
+}
+.social p.active {
+    font-weight: bold;
+    font-size: 18px;
+}
+.social p {
+    padding: 20px 30px 20px 30px;
+    font-size: 15px;
+}
+.social .icons {
+    padding-left: 30px;
+    color: var(--main-color);
+}
+.social .icons i {
+    padding: 10px 0 0 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.social .icons i.fa-facebook-f {
+    padding: 10px 0 0 0;
+}
+/* End Landing-4 */
+
+/* Start Media-Queriy */
+@media (max-width: 540px) {
+.social p {
+    display: none;
+}
+.social h1 {
+    font-weight: 500;
+    font-size: 30px;
+    padding: 0 30px;
+}
+.social .icons {
+    padding-left: 30px;
+    color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+}
+.social .icons i {
+    padding: 10px 0 0 0;
+    font-size: 30px;
+    cursor: pointer;
+}
+}
+/* End Media-Queriy */
